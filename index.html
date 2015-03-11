@@ -19,10 +19,13 @@ need to load. You'll see a lot of <link>s to CSS files for styles and
   <meta charset="utf-8">
 
   <!-- Tells the browser what the title of this page should be. -->
-  <title>Resume</title>
+  <title>Luca Pelli Resume</title>
 
   <!-- Load the page styles. -->
   <link href="css/style.css" rel="stylesheet" type="text/css">
+
+  <!-- custom styling -->
+  <link rel="stylesheet" type="text/css" href="css/custom.css">
 
   <!--
   jQuery is a common JavaScript library for reading and making changes to the
@@ -46,13 +49,13 @@ need to load. You'll see a lot of <link>s to CSS files for styles and
   Uncomment the <script> tag below when you're ready to add an interactive
   Google Map to your resume!
   -->
-  <!-- <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?libraries=places"></script> -->
+  <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?libraries=places"></script>
 
   <meta name="viewport" content="width=device-width">
 </head>
 <body unresolved>
   <div id="main">
-    Hello world!   <!-- You'll be deleting this line in the course -->
+
 
     <!--
     Everything from here to the <script> tag below is the skeleton of your
@@ -63,18 +66,38 @@ need to load. You'll see a lot of <link>s to CSS files for styles and
     <div id="header" class="center-content clearfix">
       <ul id="topContacts" class='flex-box'></ul>
     </div>
+    <div id="nav">
+      <ul class="flex-box">
+        <li><a href="#workExperience" class="darkred-text">Experience</a></li>
+        <li><a href="#projects" class="darkred-text">Projects</a></li>
+        <li><a href="#education" class="darkred-text">Education</a></li>
+        <li><a href="#mapDiv" class="darkred-text">Map</a></li>
+      </ul>
+    </div>
     <div style='clear: both;'></div>
     <div id="workExperience" class='gray'>
-      <h2>Work Experience</h2>
+      <div class="topBar clearfix">
+        <h2>Work Experience</h2>
+        <a class="top" href="#">&uarr;</a>
+      </div>
     </div>
     <div id="projects">
-      <h2>Projects</h2>
+      <div class="topBar clearfix">
+        <h2>Projects</h2>
+        <a class="top" href="#">&uarr;</a>
+      </div>
     </div>
     <div id="education" class='gray'>
-      <h2>Education</h2>
+      <div class="topBar clearfix">
+        <h2>Education</h2>
+        <a class="top" href="#">&uarr;</a>
+      </div>
     </div>
     <div id="mapDiv">
-      <h2>Where I've Lived and Worked</h2>
+      <div class="topBar clearfix">
+        <h2>Where I've Lived and Worked</h2>
+        <a class="top" href="#">&uarr;</a>
+      </div>
     </div>
     <div id="letsConnect" class='dark-gray'>
       <h2 class='orange center-text'>Let's Connect</h2>
